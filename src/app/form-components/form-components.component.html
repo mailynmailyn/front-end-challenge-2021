@@ -67,7 +67,16 @@
         <option value= "Backstage">
     </datalist>
 </label>
+
 <h3>Availability</h3>
+<input type="checkbox" id="wed" name="available" value="WED">
+  <label for="wed">Wednesday</label><br>
+<input type="checkbox" id="thurs" name="available" value="THURS">
+  <label for="thurs">Thursday</label><br>
+<input type="checkbox" id="fri" name="available" value="FRI">
+  <label for="fri">Friday</label><br>  
+<input type="checkbox" id="sat" name="available" value="SAT">
+  <label for="sat">Saturday</label><br>
 
 <h3>Health & Safety</h3>
 <input type="checkbox" id="vaxxCheck" name="vaxxCheck" value="vaxxCheck">
@@ -83,6 +92,16 @@
     Any dietary restrictions we should know about (optional)<br>
     <input name='dietary' [(ngModel)]='dietary'>
 </label><br>
+
+<br>
+<input type="checkbox" id="TOS" name="TOS" value="TOS">
+  <label for="TOS"> I agree to the Terms of Service and Privacy Policy.</label><br>
+
+<br>
+
+<label>
+    <button type="submit"> Submit Application</button>
+</label>
 
 </form>
 

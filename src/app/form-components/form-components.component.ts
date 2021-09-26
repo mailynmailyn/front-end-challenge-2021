@@ -7,15 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponentsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.name = "";
+    this.email = "";
+    this.phoneNumber = "";
+    this.health = "";
+    this.dietary = "";
+   }
 
-  public name! :string;
-  public email! :string;
-  public phoneNumber! :string;
-  public health! :string;
-  public dietary! :string;
+  public name :string;
+  public email :string;
+  public phoneNumber :string;
+  public health :string;
+  public dietary :string;
 
   ngOnInit(): void {
   }
 
+  onSubmit(form: { value: any; }){
+    //required submit operations
+    console.log(form.value);
+  }
 }
