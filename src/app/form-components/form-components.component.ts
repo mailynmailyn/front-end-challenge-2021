@@ -24,8 +24,11 @@ export class FormComponentsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form: { value: any; }){
+  onSubmit(form: { value: any; valid: any;}){
     //required submit operations
+    if(form.valid){
     console.log(form.value);
+    console.log(form.valid);
+    }
   }
 }

@@ -1,18 +1,18 @@
-<form>
+<form #signUpForm= "ngForm" (submit)= "onSubmit(signUpForm)">
 
 <h3>About You</h3>
     <label>
         Name:<br>
-        <input type="text" name='name' [(ngModel)]='name'>
+        <input type="text" name='name' [(ngModel)]='name' required>
     </label><br>
     <br>
     <label>
         Email:<br>
-        <input name='email' [(ngModel)]='email'>
+        <input name='email' [(ngModel)]='email' required>
     </label><br>
     <br>
     <label>
-        Phone Number:<br>
+        Phone Number (optional):<br>
         <input name='phoneNumber' [(ngModel)]='phoneNumber'>
     </label><br>
     <br>
@@ -100,7 +100,7 @@
 <br>
 
 <label>
-    <button type="submit"> Submit Application</button>
+    <button type="submit" [disabled] ="!signUpForm.valid"> Submit Application</button>
 </label>
 
 </form>
