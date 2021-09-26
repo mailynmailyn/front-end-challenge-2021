@@ -1,21 +1,80 @@
-<h3>About You</h3>
 <form>
+
+<h3>About You</h3>
     <label>
         Name:<br>
-        <input name='name' [(ngModel)]='name'>
+        <input type="text" name='name' [(ngModel)]='name'>
     </label><br>
+    <br>
     <label>
         Email:<br>
         <input name='email' [(ngModel)]='email'>
     </label><br>
+    <br>
     <label>
         Phone Number:<br>
         <input name='phoneNumber' [(ngModel)]='phoneNumber'>
     </label><br>
-</form>
+    <br>
+    <label>
+        Where did you hear about this oppourtunity?<br>
+        <input list = "sources">
+        <datalist id = "sources">
+            <option value= "Social Media">
+            <option value= "Word of Mouth">
+            <option value= "From Teachers">
+            <option value= "Volunteering Website">
+            <option value= "Online Ads">
+            <option value= "Flyers/Posters">
+            <option value= "Email">
+        </datalist>
+    </label>
 <h3>Team Preference</h3>
+<label>
+    First Choice<br>
+    <input list = "teams">
+    <datalist id = "teams">
+        <option value= "Check In Team">
+        <option value= "Wayfinding Team">
+        <option value= "Food Service Team">
+        <option value= "Hygiene Team">
+        <option value= "Backstage">
+    </datalist>
+</label> 
+<br>
+<br>
+<label>
+    Second Choice<br>
+    <input list = "teams">
+    <datalist id = "teams">
+        <option value= "Check In Team">
+        <option value= "Wayfinding Team">
+        <option value= "Food Service Team">
+        <option value= "Hygiene Team">
+        <option value= "Backstage">
+    </datalist>
+</label>
+<br>
+<br> 
+<label>
+    Third Choice<br>
+    <input list = "teams">
+    <datalist id = "teams">
+        <option value= "Check In Team">
+        <option value= "Wayfinding Team">
+        <option value= "Food Service Team">
+        <option value= "Hygiene Team">
+        <option value= "Backstage">
+    </datalist>
+</label>
 <h3>Availability</h3>
+
 <h3>Health & Safety</h3>
+<input type="checkbox" id="vaxxCheck" name="vaxxCheck" value="vaxxCheck">
+  <label for="vaxxCheck"> I am fully vaccinated against COVID-19 by an approved vaccine. Required to attend.</label><br>
+
+<br>
+
 <label>
     Any health conditions we should know about (optional)<br>
     <input name='health' [(ngModel)]='health'>
@@ -24,3 +83,6 @@
     Any dietary restrictions we should know about (optional)<br>
     <input name='dietary' [(ngModel)]='dietary'>
 </label><br>
+
+</form>
+
