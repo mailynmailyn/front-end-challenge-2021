@@ -15,6 +15,7 @@ export class FormComponentsComponent implements OnInit {
     this.dietary = "";
    }
 
+  //missing values, unsure how to save drop down lists
   public name :string;
   public email :string;
   public phoneNumber :string;
@@ -25,7 +26,7 @@ export class FormComponentsComponent implements OnInit {
   }
 
   onSubmit(form: { value: any; valid: any;}){
-    //required submit operations
+    //required submit operations (ensure name and email are entered)
     if(form.valid){
     console.log(form.value);
     console.log(form.valid);
